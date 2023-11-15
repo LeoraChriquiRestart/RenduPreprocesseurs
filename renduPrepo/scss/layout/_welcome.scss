@@ -1,0 +1,50 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../base/typography" as *;
+
+.welcome {
+    background-image: url('images/61842.png');
+    background-repeat: repeat;
+
+    width: 100vw;
+    height: 100vh;
+
+    @include displayFlex($justify: center, $align: center);
+
+    padding-left: 148px;
+
+    .salade {
+
+        width: 50%;
+        
+        h2 {
+            font-weight: $weight-title;
+            font-size: $font-size-title;
+            color: $color-light-green;
+
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-weight: $weight-body;
+            font-size: $font-size-body;
+            color: $color-dark-grey;
+
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-top: 40px;
+
+            background-color: $color-light-green;
+            color: $color-white;
+
+            border: none;
+            border-radius: 8px;
+
+            font-size: 24px;
+            width: 250px;
+        }
+        
+    }
+}

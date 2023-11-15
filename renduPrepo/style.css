@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(98, 114, 105, 0.3), rgba(100, 100, 100, 0.3)), url("images/Header back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 46px;
+  margin-left: 40px;
+  padding-top: 25px;
+}
+header nav img {
+  width: 200px;
+  height: 69px;
+}
+header nav .nav__contenu {
+  display: flex;
+  gap: 50px;
+}
+header nav .nav__contenu p {
+  font-weight: regular;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+header nav .nav__contenu .underline {
+  text-decoration: 2px underline;
+}
+header nav button {
+  background-color: #FFFFFF;
+  color: #B2D234;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 160px;
+  height: 39px;
+}
+header .titles {
+  align-self: center;
+  color: #FFFFFF;
+}
+header .titles h1 {
+  font-weight: semi-bold;
+  font-size: 126px;
+}
+header .titles h2 {
+  font-family: "Poppins";
+  font-style: italic;
+  font-size: 54px;
+  transform: rotate(-9deg);
+}
+header .icons {
+  align-self: flex-end;
+  margin-right: 48px;
+  margin-bottom: 48px;
+}
+header .icons img {
+  margin-left: 20px;
+}
+
+.welcome {
+  background-image: url("images/61842.png");
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 148px;
+}
+.welcome .salade {
+  width: 50%;
+}
+.welcome .salade h2 {
+  font-weight: semi-bold;
+  font-size: 52px;
+  color: #B2D234;
+  margin-bottom: 40px;
+}
+.welcome .salade p {
+  font-weight: regular;
+  font-size: 18px;
+  color: #606060;
+  margin-bottom: 20px;
+}
+.welcome .salade button {
+  margin-top: 40px;
+  background-color: #B2D234;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  width: 250px;
+}
+
+.accroche {
+  background-image: url("images/ismael-trevino-NDyuR4Huig8-unsplash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.accroche .prepare {
+  background-color: rgba(179, 210, 52, 0.8588235294);
+  opacity: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 650px;
+  padding: 54px 74px;
+  margin-right: 150px;
+}
+.accroche .prepare h2 {
+  color: #FFFFFF;
+  font-weight: semi-bold;
+  font-size: 45px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.accroche .prepare p {
+  color: #FFFFFF;
+  font-weight: regular;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.accroche .prepare button {
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  color: #B2D234;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  width: 250px;
+}
+
+button {
+  font-weight: semi-bold;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-inline: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
