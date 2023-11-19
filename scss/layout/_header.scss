@@ -1,0 +1,132 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../base/typography" as *;
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    background: linear-gradient(150deg, rgba(96, 160, 216, 0.7),rgba(178, 210, 52, 0.7)), url('images/Header back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+    
+    nav {
+        @include displayFlex($justify: space-between);
+        
+        margin-right: 46px;
+        margin-left: 40px;
+        padding-top: 25px;
+
+        img {
+            width: 200px;
+            height: 69px;
+        }
+
+        .nav__contenu {
+            display: flex;
+            gap: 50px;
+            
+            p {
+                font-weight: $weight-body;
+                font-size: $font-size-body;
+                color: $color-white;
+
+            }
+            
+            .underline {
+                text-decoration: 2px underline;
+            }
+
+            button {
+                background-color: $color-white;
+                color: $color-light-green;
+    
+                border: none;
+                border-radius: 8px;
+    
+                font-size: 15px;
+    
+                width: 160px;
+                height: 39px;
+            }
+        }
+        
+
+    }
+
+    .titles {
+        align-self: center;
+        color: $color-white;
+        
+        h1 {
+            font-weight: $weight-title;
+            font-size: 126px;
+        }
+
+        h2 {
+            font-family: "Poppins";
+            font-style: italic;
+            font-size: 54px;
+            transform: rotate(-9deg);
+
+            padding-left: 140px;
+        }
+    }
+    
+    .icons {
+        align-self: flex-end;
+        margin-right: 48px;
+        margin-bottom: 48px;
+
+        img {
+            margin-left: 20px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+    
+            .nav__contenu {
+            flex-direction: column;
+            gap: 2px;
+
+                button {
+                    align-self: center;
+                }
+            }
+        }
+    
+    
+        .titles {
+            text-align: center;
+            h1 {
+            font-size: 4rem;
+            }
+
+            h2 {
+            font-size: 2rem;
+            padding-left: 12px;
+            }
+        }
+    
+        .icons {
+            margin-top: 10px;
+            align-self: center;
+            margin-right: 0;
+          
+            img {
+            width: 30px;
+            }   
+        }
+    }
+
+}
