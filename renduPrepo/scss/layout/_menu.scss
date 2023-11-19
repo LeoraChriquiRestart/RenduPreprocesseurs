@@ -1,0 +1,142 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../base/typography" as *;
+
+.menu {
+
+    background-image: url('images/pattern.png');
+
+    width: 100vw;
+    height: 100vh;
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 40px;
+
+        h2 {
+            font-weight: $weight-title;
+            font-size: $font-size-title;
+
+            color: $color-light-green;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: $weight-body;
+            font-size: $font-size-body;
+
+            color: $color-dark-grey;
+
+        }
+
+        .decouverte {
+            margin-top: 10px;
+        }
+    }
+
+    .menu__contenu {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 70px;
+
+        .menu__gauche {
+            height: 60vh;
+            width: 450px;
+
+            display: flex;
+            flex-direction: column;
+
+            .type_salade {
+
+                margin-bottom: 12px;
+                
+                .nom_prix {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h3 {
+                        font-weight: Medium;
+                        font-size: 24px;
+
+                        color: $color-light-green;
+                    
+                    }
+
+                    p {
+                        font-weight: $weight-body;
+                        font-size: $font-size-body;
+
+                        color: $color-dark-grey;
+                    }
+                }
+            }
+
+            .etiquette {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .etiquette_vendue {
+                display: block;
+                background-color: $color-light-green;
+                color: $color-white;
+                padding: 4px;
+            }
+
+            .meilleure_vente {
+                border: 1px solid $color-light-green;
+
+                padding: 10px;
+            }
+
+        }
+
+        .menu__droite {
+            @include displayFlex(center, center);
+            flex-direction: column;
+            gap: 40px;
+
+            margin-top: 40px;
+            margin-inline: 80px;
+            width: 450px;
+            height: 35vh;
+
+            .forces h2 {
+                font-style: italic;
+                font-size: 64px;
+
+                transform: rotate(-9deg);
+
+            }
+            
+            .vert {
+                color: $color-light-green;
+            }
+
+            .bleu {
+                color: $color-light-blue;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            button {
+    
+                background-color: $color-light-green;
+                color: $color-white;
+
+                border: none;
+                border-radius: 8px;
+
+                font-size: 24px;
+                width: 350px;
+                
+            }
+        }
+    }
+}

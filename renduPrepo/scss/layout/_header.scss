@@ -9,7 +9,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     
-    background-image: linear-gradient(rgba(98, 114, 105, 0.3),rgba(100, 100, 100, 0.3)), url('images/Header back.png');
+    background: linear-gradient(150deg, rgba(96, 160, 216, 0.7),rgba(178, 210, 52, 0.7)), url('images/Header back.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -27,6 +27,7 @@ header {
             width: 200px;
             height: 69px;
         }
+
         .nav__contenu {
             display: flex;
             gap: 50px;
@@ -42,20 +43,20 @@ header {
                 text-decoration: 2px underline;
             }
 
+            button {
+                background-color: $color-white;
+                color: $color-light-green;
+    
+                border: none;
+                border-radius: 8px;
+    
+                font-size: 15px;
+    
+                width: 160px;
+                height: 39px;
+            }
         }
         
-        button {
-            background-color: $color-white;
-            color: $color-light-green;
-
-            border: none;
-            border-radius: 8px;
-
-            font-size: 15px;
-
-            width: 160px;
-            height: 39px;
-        }
 
     }
 
@@ -73,6 +74,8 @@ header {
             font-style: italic;
             font-size: 54px;
             transform: rotate(-9deg);
+
+            padding-left: 140px;
         }
     }
     
