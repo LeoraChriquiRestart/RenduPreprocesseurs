@@ -30,4 +30,22 @@ footer {
         font-weight: $weight-body;
     }
 
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+
+        img {
+            width: 200px;
+        }
+    
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    }
 }

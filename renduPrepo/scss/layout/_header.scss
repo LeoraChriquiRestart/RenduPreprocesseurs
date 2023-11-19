@@ -88,4 +88,45 @@ header {
             margin-left: 20px;
         }
     }
+
+    @media screen and (max-width: 800px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+    
+            .nav__contenu {
+            flex-direction: column;
+            gap: 2px;
+
+                button {
+                    align-self: center;
+                }
+            }
+        }
+    
+    
+        .titles {
+            text-align: center;
+            h1 {
+            font-size: 4rem;
+            }
+
+            h2 {
+            font-size: 2rem;
+            padding-left: 12px;
+            }
+        }
+    
+        .icons {
+            margin-top: 10px;
+            align-self: center;
+            margin-right: 0;
+          
+            img {
+            width: 30px;
+            }   
+        }
+    }
+
 }

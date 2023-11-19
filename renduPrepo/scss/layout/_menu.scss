@@ -139,4 +139,62 @@
             }
         }
     }
+    @media screen and (max-width: 800px) {
+        height: auto;
+        .intro {
+            h2 {
+                font-size: 2rem;
+            }
+    
+            p {
+                text-align: center;
+                font-size: 1rem;
+                padding-inline: 10px;
+            }
+        }
+        .menu__contenu {
+            flex-direction: column;
+            align-items: center;
+          
+            .menu__gauche,
+            .menu__droite {
+                width: 80%;
+                margin: 20px 0;
+            }
+    
+            .menu__gauche {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+    
+                .type_salade {
+                    .nom_prix {
+                    display: flex;
+                    justify-content: space-between;
+                    }
+                }
+    
+                .etiquette {
+                    justify-content: center;
+                }
+            }
+    
+            .menu__droite {
+                margin-top: 20px;
+                height: auto;
+    
+                .forces h2 {
+                    font-size: 2rem;    
+                }
+        
+                p {
+                font-size: 1rem;
+                }
+        
+                button {
+                width: 250px;
+                }
+            }
+        }
+    }
 }

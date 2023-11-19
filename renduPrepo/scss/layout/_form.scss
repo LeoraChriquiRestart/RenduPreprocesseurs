@@ -118,4 +118,58 @@
             width: 250px;
         }
     }
+
+    @media screen and (max-width: 800px) {
+        
+        .form__droite { 
+            width: 100%;
+            height: auto;
+        }
+    
+        .form__gauche {
+            display: none;
+        }
+    
+        .form__droite {
+            height: auto;
+            padding: 0 20px;
+
+            .intro {
+                text-align: center;
+
+                h2 {
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            form {
+                .nom_prenom {
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .form_input {
+                    label {
+                        font-size: 1rem;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+
+            button {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    }
 }
